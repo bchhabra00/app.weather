@@ -37,7 +37,7 @@ let image=document.createElement('img')
 image.style.display='block'
     temprature.innerHTML="Temprature:" + weather.temprature;
     description.innerHTML="Description:" + weather.descript;
-    image.src=weather.icon + '.png';
+    image.src="codes/" + weather.icon + '.png';
     sendrequest(url);
     
 }

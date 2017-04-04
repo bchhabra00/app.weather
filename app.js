@@ -4,7 +4,7 @@ getweather.addEventListener('click',(e) => {
 let city=document.getElementById('city').value;
 let country=document.getElementById('country').value;
 let icon=document.createElement('img');
-icon.setAttribute('src','img/codes/');
+icon.setAttribute('src','codes/');
 let  box=document.getElementById('display');    
 let temprature=document.createElement('span');
 temprature.style.display='block';
@@ -24,7 +24,7 @@ let url= "http://api.openweathermap.org/data/2.5/weather?q=" + city + ','
     let data= JSON.parse(xhttp.responseText);
    temprature.innerHTML="Temprature:" + data.main.temp;
    description.innerHTML="Description:" + data.weather.main;
-   icon.src="img/codes/" + data.weather[0].id + ".png";
+   icon.src="codes/" + data.weather[0].id + ".png";
     };
    }
     xhttp.send();  
